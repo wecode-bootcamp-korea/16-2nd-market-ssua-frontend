@@ -1,11 +1,10 @@
 @import "./Reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 
-$font-purple: #5F0280;
-$font-white: #FFFFFF;
-$font-black : #333333;
-$font-grey : #F7F8F9;
-
+$font-purple: #5f0280;
+$font-white: #ffffff;
+$font-black: #333333;
+$font-grey: #f7f8f9;
 
 @mixin flex-center {
   display: flex;
@@ -13,10 +12,10 @@ $font-grey : #F7F8F9;
   align-items: center;
 }
 
-html{
-  font-size : 10px;
+html {
+  font-size: 10px;
 
-  body{
-    font-family: "Noto Sans KR";
+  body {
+    font-family: "Noto Sans";
   }
 }
