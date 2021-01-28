@@ -8,7 +8,7 @@ class Nav extends React.Component{
           <div className='navTop'>
             <div className='leftTop'>
               <span>수도권 이외 지역 </span>
-              <span>택배배송 <i class="fas fa-caret-right"></i> </span>
+              <span>택배배송 <i class="fas fa-caret-right"></i></span>
             </div>
             <div className='rightTop'>
               <span>회원가입</span>
@@ -18,16 +18,18 @@ class Nav extends React.Component{
           </div>
           <div className='navMiddle'>
             <div className='mainImage'>
-              <img src='/images/logo-white.jpg' alt='marketssua 홈페이지 로고입니다.' />
+              <img alt='marketssua 홈페이지 로고입니다.' src='/images/logo-white.jpg'  />
             </div>
           </div>
           <div className='navBottom'>
             <div className='navMenu'>
-              <span><i class="fas fa-bars"></i>전체 상품</span>
-              <span>강아지 간식</span>
-              <span>강아지 주식</span>
-              <span>고양이 간식</span>
-              <span>고양이 주식</span>
+              <ul>
+                <li><i class="fas fa-bars"></i>전체 상품</li>
+                <li>강아지 간식</li>
+                <li>강아지 주식</li>
+                <li>고양이 간식</li>
+                <li>고양이 주식</li>
+              </ul> 
               <div className= 'searchBar'>      
                 <input className='bar' placeholder='우리 아가들이 좋아하는 간식!' />
                 <i class="fas fa-search" />
