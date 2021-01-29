@@ -1,12 +1,9 @@
 import React from "react";
-import "./Cart.scss"
+import "./Cart.scss";
 
-class Cart extends React.Component{
-  render(){
-    return(
-    <div>
-    </div>
-    );
+class Cart extends React.Component {
+  render() {
+    return <div></div>;
   }
 }
 

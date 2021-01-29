@@ -1,0 +1,19 @@
+div {
+  #socialBtn {
+    padding: 0;
+    width: 338px;
+    height: 52px;
+    line-height: 52px;
+    color: #783c00;
+    background-color: #ffeb00;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}
