@@ -1,0 +1,117 @@
+@import "../../Styles/Common.scss";
+
+.navWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .navTop {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+    font-size: 12px;
+    cursor: pointer;
+
+    .leftTop {
+      @include flex-center;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 0 10px;
+      height: 28px;
+      margin-top: 15px;
+
+      span:first-child {
+        margin-right: 8px;
+      }
+
+      span:nth-child(2) {
+        font-weight: 600;
+        color: $font-purple;
+      }
+    }
+
+    .rightTop {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span:first-child {
+        color: $font-purple;
+      }
+
+      span {
+        margin: 10px;
+        padding: 5px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .navMiddle {
+    height: 80px;
+
+    .mainImage {
+      position: relative;
+      bottom: 20px;
+      margin: 0 auto;
+      width: 1050px;
+      border-radius: 50%;
+      width: 120px;
+      height: 70px;
+    }
+  }
+
+  .navBottom {
+    .navMenu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1050px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        float: left;
+        margin-right: 50px;
+
+        &:hover {
+          color: $font-purple;
+        }
+      }
+
+      .fa-bars {
+        margin-right: 5px;
+        font-weight: 700;
+      }
+    }
+
+    .searchBar {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .bar {
+        width: 200px;
+        height: 30px;
+        padding: 0 20px;
+        font-size: 10px;
+        background-color: #f7f7f7;
+        border-radius: 20px;
+      }
+
+      .fa-search {
+        position: absolute;
+        right: 8px;
+      }
+    }
+  }
+}
