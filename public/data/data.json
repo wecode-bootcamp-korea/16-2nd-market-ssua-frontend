@@ -1,0 +1,42 @@
+{
+  "id": 2,
+  "user_order_items": [
+    {
+      "id": 5,
+      "name": "[SSUA] 연어롤 치즈",
+      "image_url": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "price": 7000,
+      "discount_rate": 15,
+      "discount_price": 5950,
+      "quantity": 1,
+      "sold_out": "product_exist",
+      "package_types": ["냉장/종이포장"]
+    },
+    {
+      "id": 6,
+      "name": "[SSUA] 건조 소고기",
+      "image_url": "https://images.unsplash.com/photo-1560853902-7cb2b0713c6b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ2fHxwZXQlMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      "price": 13000,
+      "discount_rate": 0,
+      "discount_price": 13000,
+      "quantity": 1,
+      "sold_out": "product_exist",
+      "package_types": ["상온/종이포장"]
+    },
+    {
+      "id": 7,
+      "name": "[SSUA] 냉동 닭고기",
+      "image_url": "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "price": 13000,
+      "discount_rate": 25,
+      "discount_price": 9750,
+      "quantity": 1,
+      "sold_out": "product_exist",
+      "package_types": ["냉장/종이포장"]
+    }
+  ],
+  "point": 1722,
+  "delivery_price": 6000,
+  "user_address": "경기도 광주시 장지1길 85-17(장지동, 풍경마을)",
+  "price_difference": -4300
+}

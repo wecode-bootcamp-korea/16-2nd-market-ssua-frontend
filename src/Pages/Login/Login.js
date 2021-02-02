@@ -4,43 +4,6 @@ import { SIGNIN_SERVER } from "../../config";
 import Nav from "../../Components/Nav/Nav";
 
 class Login extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-    };
-  }
-
-  handleLoginInfo = (e) => {
-    const { id, value } = e.target;
-    this.setState({ [id]: value });
-  };
-
-  handleLogin = () => {
-    const { email, password } = this.state;
-    fetch(`${SIGNIN_SERVER}`, {
-      method: "POST",
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.message === "SUCCESS") {
-          localStorage.setItem("Authorization", result.Authorization);
-          this.props.history.push("/");
-        } else {
-          alert("email과 password를 입력하세요");
-        }
-      });
-  };
-
-  handleSignup = () => {
-    this.props.history.push("/signup");
-  };
-
   render() {
     const { email, password } = this.state;
     const { handleLoginInfo, handleLogin, handleSignup } = this;
