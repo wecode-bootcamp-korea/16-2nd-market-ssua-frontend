@@ -1,0 +1,181 @@
+@import "../../Styles/Common.scss";
+.Cart {
+  width: 1050px;
+  margin: 0 auto;
+  header {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 55px 0 46px;
+  }
+  .cartContainer {
+    display: flex;
+
+    .cartList {
+      width: 742px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid grey;
+
+      .productListBox {
+        display: flex;
+        height: 128px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+
+        .checkbox {
+          margin: 50px;
+        }
+        img {
+          width: 60px;
+          height: 78px;
+          margin: 24px;
+        }
+        .nameBox {
+          margin-top: 50px;
+          width: 250px;
+          span {
+            font-size: 18px;
+            margin: 50px;
+          }
+        }
+
+        .buttonContainer {
+          display: flex;
+          align-items: center;
+          margin: 10px;
+
+          .plus {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+          }
+
+          .itemNumber {
+            width: 15px;
+            padding: 0;
+            margin-left: 8px;
+          }
+
+          .minus {
+            width: 30px;
+            height: 30px;
+            font-size: 28px;
+            margin-bottom: 6px;
+            cursor: pointer;
+          }
+        }
+        .priceBox {
+          font-size: 18px;
+          margin: 50px;
+        }
+      }
+    }
+
+    .cartResult {
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+
+      .addressBox {
+        padding: 23px 19px 20px;
+
+        .h1 {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .userAddress {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+
+        h3 {
+          font-size: 14px;
+          color: $font-purple;
+          margin-top: 10px;
+        }
+
+        .addressButton {
+          height: 36px;
+          width: 100%;
+          color: $font-purple;
+          margin-top: 17px;
+          border: 1px solid $font-purple;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+
+      .accountBox {
+        background-color: #fafafa;
+
+        .priceContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 20px;
+          .priceTitle {
+            font-size: 16px;
+          }
+          .price {
+            font-size: 16px;
+          }
+        }
+        .discountContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 20px;
+          .discountTitle {
+            font-size: 16px;
+          }
+          .discountPrice {
+            font-size: 16px;
+          }
+        }
+
+        .deliveryContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 20px;
+          border-bottom: 1px solid black;
+          .deliveryTitle {
+            font-size: 16px;
+          }
+          .deliveryPrice {
+            font-size: 16px;
+          }
+        }
+        .totalPriceContainer {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 20px;
+          .totalPriceTitle {
+            font-size: 16px;
+          }
+          .totalPrice {
+            font-size: 16px;
+          }
+        }
+        .accountButton {
+          height: 52px;
+          width: 100%;
+          background-color: $font-purple;
+          color: white;
+          margin-top: 17px;
+          border: 1px solid $font-purple;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+        ul {
+          list-style: inside;
+          margin: 10px;
+          li {
+            font-size: 10px;
+            color: lightgray;
+          }
+        }
+      }
+    }
+  }
+}
