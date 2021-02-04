@@ -33,7 +33,9 @@ class Details extends Component {
   }
 
   getItemDetailData = async () => {
-    const response = await fetch(`./data/itemdetail.json`);
+    const response = await fetch(
+      `http://13.125.206.130:8000/products/product-group/3`
+    );
     const result = await response.json();
     this.setState({ itemData: result.result });
   };
