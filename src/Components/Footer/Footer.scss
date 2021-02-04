@@ -26,6 +26,7 @@
       }
 
       ul {
+        display: table;
         margin-left: 18px;
 
         li:nth-child(2) {
@@ -88,10 +89,6 @@
       .sns {
         color: #999999;
         margin-top: 20px;
-
-        i {
-          margin-right: 20px;
-        }
       }
     }
   }
@@ -100,6 +97,7 @@
     img {
       border-top: 0.8px solid #999999;
       padding-top: 20px;
+      padding-bottom: 40px;
     }
   }
 }

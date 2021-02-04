@@ -1,0 +1,23 @@
+@import "../../Styles/Common.scss";
+
+.slide_wrapper {
+  height: 400px;
+  margin-bottom: 100px;
+
+  button {
+    z-index: 1;
+
+    &.slick-prev {
+      left: 90px;
+    }
+
+    &.slick-next {
+      right: 90px;
+    }
+
+    &.slick-prev:before,
+    &.slick-next:before {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component, Fragment }from "react";
 import "./Login.scss";
 import { SIGNIN_SERVER } from "../../config";
+import Nav from "../../Components/Nav/Nav";
 
 class Login extends React.Component {
   constructor() {
@@ -44,6 +45,8 @@ class Login extends React.Component {
     const { email, password } = this.state;
     const { handleLoginInfo, handleLogin, handleSignup } = this;
     return (
+      <Fragment>
+      <Nav />
       <div className="login">
         <section>
           <h3>로그인</h3>
@@ -79,8 +82,8 @@ class Login extends React.Component {
           </div>
         </section>
       </div>
+      </Fragment>
     );
   }
 }
-
 export default Login;

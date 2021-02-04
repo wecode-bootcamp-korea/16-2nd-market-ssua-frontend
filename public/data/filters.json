@@ -1,0 +1,25 @@
+{
+  "filters": [
+      {
+          "id": 1,
+          "name": "혜택순",
+          "name2": "-discount_rate"
+      },
+      {
+          "id": 2,
+          "name": "신상품순",
+          "name2": "created_at"
+      },
+      {
+          "id": 3,
+          "name": "낮은 가격순",
+          "name2": "price"
+        },
+      {
+          "id": 4,
+          "name": "높은 가격순",
+          "name2": "-price"
+
+      }
+  ]
+}

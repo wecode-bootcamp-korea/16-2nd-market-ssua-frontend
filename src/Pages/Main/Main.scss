@@ -1,0 +1,45 @@
+@import "../../Styles/Common.scss";
+
+.main {
+  .main_wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .item_good,
+    .item_today {
+      margin-bottom: 40px;
+    }
+
+    .main_type2 {
+      padding-top: 70px;
+      padding-bottom: 10px;
+    }
+
+    .id_insta {
+      padding-top: 30px;
+      padding-bottom: 50px;
+      text-align: center;
+      font-size: 15px;
+
+      span {
+        display: block;
+        font-weight: 400;
+        color: #999999;
+      }
+      a {
+        font-weight: 700;
+        line-height: 30px;
+      }
+    }
+  }
+}
