@@ -1,0 +1,81 @@
+@import "../../../Styles/Common.scss";
+
+.signup_mid_wrap {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-top: 20px;
+
+  .main_title {
+    width: 139px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    &::after {
+      content: "*";
+      color: #ee6a7b;
+    }
+  }
+
+  .input_wrap {
+    display: flex;
+    flex-direction: column;
+
+    .input_wrap_input {
+      width: 315px;
+      height: 42px;
+      padding: 10px;
+      border: 1px solid #dedede;
+      border-radius: 4.5px;
+
+      &:focus {
+        border: 1px solid black;
+        border-radius: 4.5px;
+      }
+
+      &::placeholder {
+        color: #dedede;
+      }
+    }
+  }
+
+  .button {
+    height: 42px;
+    border: 1px solid $font-purple;
+    border-radius: 4.5px;
+    color: $font-purple;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .button_first {
+    width: 135px;
+    margin-left: 12px;
+  }
+
+  .button_second {
+    width: 315px;
+    position: relative;
+  }
+}
+
+.show_content {
+  display: flex;
+  justify-content: flex-start;
+  width: 315px;
+  margin: auto;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.hide_content {
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
