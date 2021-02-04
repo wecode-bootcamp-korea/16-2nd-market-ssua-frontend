@@ -1,0 +1,16 @@
+.page_button {
+  button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999999;
+    margin: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../Styles/Common.scss";
+
+.list {
+  width: 1050px;
+  margin: 0 auto;
+
+  .item_wrapper {
+    .list_nav {
+      width: 100%;
+      margin-top: 80px;
+      margin-bottom: 60px;
+
+      .item_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        span {
+          font-size: 22px;
+          font-weight: bold;
+          color: $font-purple;
+        }
+
+        ul {
+          font-size: 14px;
+
+          li {
+            padding-left: 30px;
+            padding-right: 25px;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

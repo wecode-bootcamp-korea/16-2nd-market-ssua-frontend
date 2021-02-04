@@ -35,10 +35,15 @@
     .rightTop {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       cursor: pointer;
 
-      span:first-child {
-        color: $font-purple;
+      a {
+        color: black;
+
+        .signup-purple {
+          color: $font-purple;
+        }
       }
 
       span {

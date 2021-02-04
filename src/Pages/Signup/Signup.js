@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import TitleInputButton from "./components/TitleInputButton";
 import signupData from "./signupData";
 import "./Signup.scss";
 import { SIGNUP_SERVER } from "../../config";
+import Nav from "../../Components/Nav/Nav";
 
 class Signup extends React.Component {
   constructor() {
@@ -87,6 +88,8 @@ class Signup extends React.Component {
       passwordValue !== "" && repasswordValue === passwordValue;
 
     return (
+      <Fragment>
+      <Nav />
       <div className="signup">
         <div className="signup_top">
           <h3>회원가입</h3>
@@ -109,7 +112,9 @@ class Signup extends React.Component {
           <button onClick={this.handleFinalButton}>가입하기</button>
         </div>
       </div>
+      </Fragment>
     );
   }
 }
+
 export default Signup;
