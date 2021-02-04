@@ -1,86 +1,83 @@
 @import "../../Styles/Common.scss";
 
-.login{
+.login {
   @include flex-center;
-  width:100vw;
-  height: 100vh;
 
-  section{
-  width:340px;
-
-    h3{
+  section {
+    width: 340px;
+    margin: 85px 0;
+    h3 {
       text-align: center;
       margin-bottom: 25px;
       font-weight: 800;
-      font-size : 2rem;
+      font-size: 2rem;
     }
 
-    .login_input{
+    .login_input {
       display: flex;
       flex-direction: column;
 
-      input{
-        width:338px;
+      input {
+        width: 338px;
         height: 52px;
-        padding:0 19px;
+        padding: 0 19px;
         border: 1px solid #dedede;
         border-radius: 4px;
-      }
 
-      input::placeholder{
-        color: #dedede;
-      }
+        &::placeholder {
+          color: #dedede;
+        }
 
-      input:last-child{
-        margin-top: 10px;
-        
+        &:last-child {
+          margin-top: 10px;
+        }
       }
-
     }
-    .mid_content{
+
+    .mid_content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top:5px;
-      width:340px;
+      margin-top: 5px;
+      width: 340px;
       height: 30px;
 
-    .login_check{
-      display: flex;
-      align-items: center;
-      font-size: 1.3rem;
-      span{
-        padding-left: 1.7px;
-      }
-    }
-
-    .find{
-      span{
+      .login_check {
+        display: flex;
+        align-items: center;
         font-size: 1.3rem;
-        padding-left: 5px;
+        span {
+          padding-left: 1.7px;
+        }
+      }
+
+      .find {
+        span {
+          font-size: 1.3rem;
+          padding-left: 5px;
+        }
       }
     }
-  }
 
-    .login_button{
+    .login_button {
       display: flex;
       flex-direction: column;
       margin-top: 25px;
 
-      button{
-        border:1px solid $font-purple;
+      button {
+        border: 1px solid $font-purple;
         border-radius: 4px;
         background-color: $font-purple;
-        color : $font-white;
-        width:338px;
+        color: $font-white;
+        width: 338px;
         height: 52px;
         font-size: 1.6rem;
         font-weight: 500;
       }
 
-      button:last-child{
+      button:last-child {
         background-color: $font-white;
-        color : $font-purple;
+        color: $font-purple;
         margin-top: 10px;
       }
     }
