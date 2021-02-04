@@ -1,0 +1,225 @@
+@import "../../../Styles/common.scss";
+
+.infoandcartput {
+  display: flex;
+  justify-content: space-between;
+
+  .item-image {
+    width: 430px;
+    height: 552px;
+    margin-right: 60px;
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  .item-detail-right {
+    width: 560px;
+
+    .info {
+      .name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          padding: 10px 0 8px 0;
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          border: 1px solid $light-gray;
+          border-radius: 50%;
+          font-size: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      h3 {
+        padding-bottom: 29px;
+        font-size: 14px;
+        color: $dark-gray;
+      }
+
+      .price {
+        .on-login {
+          font-size: 14px;
+        }
+
+        .real-price {
+          margin: 6px 0 8px;
+          font-size: 28px;
+          font-weight: 600;
+
+          .unit {
+            display: inline-block;
+            position: absolute;
+            padding: 6px 0 0 2px;
+            font-size: 18px;
+            font-weight: 400;
+          }
+
+          .sale-percentage {
+            margin-left: 30px;
+            color: $yellow-color;
+          }
+        }
+        .nosale-price {
+          display: block;
+          color: $light-gray;
+          height: 24px;
+
+          .price {
+            text-decoration: line-through;
+            margin-right: 4px;
+          }
+        }
+      }
+      .point-guide {
+        margin-top: 11px;
+
+        .member-class {
+          padding: 1px 8px;
+          border: 1px solid $theme-color;
+          border-radius: 12px;
+          color: $theme-color;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        .point-save {
+          display: inline-block;
+          position: absolute;
+          padding: 2px 4px 6px 4px;
+          font-size: 14px;
+        }
+      }
+      .item-info-list {
+        margin: 27px 0;
+        font-size: 14px;
+
+        li {
+          display: flex;
+          align-items: center;
+          padding: 16px 0;
+          border-top: 1px solid $light-gray;
+          color: $dark-gray;
+          min-height: 54px;
+
+          .title {
+            display: inline-block;
+            width: 150px;
+          }
+
+          .content {
+            color: black;
+            width: 100%;
+            line-height: 21px;
+          }
+        }
+        .buy-quantity {
+          border-bottom: 1px solid $light-gray;
+
+          input {
+            width: 41px;
+            height: 22px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid $light-gray;
+            outline: none;
+          }
+
+          button {
+            width: 22px;
+            height: 22px;
+            border: 1px solid $light-gray;
+            outline: none;
+
+            &.subtract {
+              border-right: none;
+            }
+            &.add {
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+    .cart-put {
+      display: flex;
+      flex-direction: column;
+
+      .price-box {
+        margin: 30px 0 10px 0;
+        text-align: right;
+
+        .total {
+          font-size: 13px;
+        }
+
+        .price {
+          font-size: 32px;
+          font-weight: 800;
+        }
+
+        .unit {
+          font-size: 20px;
+        }
+      }
+      .point-guide {
+        text-align: right;
+
+        .point {
+          @extend .small-yellow-box;
+        }
+
+        .guide {
+          display: inline-block;
+          padding: 4px 4px;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+      .button-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        button {
+          height: 54px;
+          width: 128px;
+          border: 1px solid $purple-text-color;
+          border-radius: 4px;
+          background-color: white;
+          color: $purple-text-color;
+          font-size: 16px;
+          font-weight: 600;
+          &.restock-notify {
+            border-color: $light-gray;
+            color: $light-gray;
+            cursor: default;
+          }
+
+          &.put-cart {
+            width: 278px;
+            background-color: $purple-text-color;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

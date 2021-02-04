@@ -1,0 +1,59 @@
+{
+  "product_detail": {
+      "product_group_name": "짜먹는간식 7종",
+      "sales_unit": "1팩",
+      "thumbnail": "https://elasticbeanstalk-ap-northeast-2-848968445189.s3.ap-northeast-2.amazonaws.com/static/assets/KakaoTalk_Photo_2021-01-26-22-30-25-10.jpeg",
+      "delivery_type": "샛별배송/택배배송",
+      "information": "반려동물의 취향에 따라 기호성의 차이가 있을 수 있습니다.",
+      "main_description": "신선한 주재료를 가득히 담아낸(생후 3개월 이상)",
+      "detail_description": "반려견을 위한 식품이라면 사료부터 간식까지 원재료를 하나하나 따져보게 되지요. 하지만 덴탈껌은 치석 제거라는 기능에 초점을 맞추느라 @ 무심코 구매하기 십상이에요. 컬리는 구강 건강을 챙기는 것은 물론, 곡물이나 동물성 원재료로 인한 알레르기 걱정까지 덜어 줄 @ 적당한 덴탈껌을 발견했습니다. 껌에 들어가는 대표 원재료인 육분, 밀가루(소맥분), 대두박은 조금도 들어 있지 않아요. 대신 소화가 편하고 기호성이 @ 좋은 고구마 전분과 칼로리가 낮은 타피오카 전분을 사용했지요. 여기에 카테킨을 풍부하게 함유하고 있어 구강의 박테리아 증식을 막는 데 @ 도움을 줄 수 있는 디카페인 녹차추출물도 더했습니다. 양치질을 싫어하는 아이들의 구강 건강을 관리하고 싶다면 프루터블의 덴탈껌을 활용",
+      "discount_rate": 0,
+      "package_type": "상온/종이포장",
+      "product_group_images": [
+          {
+              "url": "https://images.unsplash.com/photo-1588172519260-a34bff83f31d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTZ8fHBldCUyMGZvb2R8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+          },
+          {
+              "url": "https://images.unsplash.com/photo-1552910618-b540cf6df284?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ1fHxwZXQlMjBmb29kfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+          }
+      ],
+      "product_list": [
+          {
+              "id": 1,
+              "name": "오로라연어",
+              "price": 7000,
+              "sold_out": false, # false = 품절 아니라는 의미
+              "ingredient": "연어(노르웨이산)",
+              "point": "오메가가 풍부하다"
+          },
+          {
+              "id": 2,
+              "name": "뉴질랜드참돔",
+              "price": 8000,
+              "sold_out": false,
+              "ingredient": "참돔(뉴질랜드)",
+              "point": "타우린이 풍부하다"
+          }
+      ],
+      "related_product": [
+          {
+              "related_product_id": 2,
+              "related_product_name": "우유껌",
+              "related_product_price": 3500,
+              "related_product_thumbnail": "https://elasticbeanstalk-ap-northeast-2-848968445189.s3.ap-northeast-2.amazonaws.com/static/assets/KakaoTalk_Photo_2021-01-26-22-30-25-5.jpeg"
+          },
+          {
+              "related_product_id": 3,
+              "related_product_name": "치즈볼",
+              "related_product_price": 7000,
+              "related_product_thumbnail": "https://elasticbeanstalk-ap-northeast-2-848968445189.s3.ap-northeast-2.amazonaws.com/static/assets/KakaoTalk_Photo_2021-01-26-22-30-25-5.jpeg"
+          },
+          {
+              "related_product_id": 4,
+              "related_product_name": "반려견아이스크림",
+              "related_product_price": 7200,
+              "related_product_thumbnail": "https://elasticbeanstalk-ap-northeast-2-848968445189.s3.ap-northeast-2.amazonaws.com/static/assets/KakaoTalk_Photo_2021-01-26-22-30-25-5.jpeg"
+          }
+      ]
+  }
+}

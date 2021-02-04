@@ -6,6 +6,14 @@ $font-white: #ffffff;
 $font-black: #333333;
 $font-grey: #f7f8f9;
 
+$theme-color: #512772;
+$purple-text-color: #59368f;
+$purple-item-sticker: #b69ac8;
+$dark-gray: #949296;
+$light-gray: #dddfe1;
+$background-gray: #f5f5f5;
+$yellow-color: #febf00;
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -18,4 +26,15 @@ html {
   body {
     font-family: "Noto Sans";
   }
+}
+
+.small-yellow-box {
+  display: inline-block;
+  width: 50px;
+  padding: 4px 4px;
+  background-color: #febf00;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }

@@ -1,0 +1,10 @@
+@import "../../Styles/common.scss";
+
+.details {
+  display: flex;
+  justify-content: center;
+
+  .main-width {
+    width: 1050px;
+  }
+}
