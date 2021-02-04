@@ -16,23 +16,18 @@ class Board extends Component {
   openBoardContent = (e) => {
     const { boardData } = this.state;
     for (let i = 0; i < boardData.length; i++) {
-      if (boardData[i].id === +e.target.id)
+      if (boardData[i].question_id === +e.target.question_id)
         boardData[i].show = !boardData[i].show;
     }
     this.setState({ boardData: boardData });
   };
 
   getInquireData = async () => {
-    const questionRes = await fetch(`./data/Inquire.json`);
+    const questionRes = await fetch(``);
     const question = await questionRes.json();
     this.setState({ boardData: question.question });
   };
 
-  componentDidMount() {
-    const { menuTabId } = this.props;
-    const { getReviewData, getInquireData } = this;
-    menuTabId === 4 ? getReviewData() : getInquireData();
-  }
   render() {
     const { menuTabId, showLike } = this.props;
     return (
@@ -51,37 +46,6 @@ class Board extends Component {
               <th className="lookup">조회</th>
             </tr>
           </thead>
-
-          {this.state.boardData.map((review) => {
-            return (
-              <tbody key={review.id}>
-                <tr>
-                  <td className="id">{review.id}</td>
-                  <td
-                    className="title"
-                    id={review.id}
-                    onClick={this.openBoardContent}
-                  >
-                    {review.title}
-                  </td>
-                  <td className="writer">{review.writer}</td>
-                  <td className="date">{review.date}</td>
-                  {showLike && <td className="like">{review.like}</td>}
-                  <td className="lookup">{review.lookup}</td>
-                </tr>
-                <tr>
-                  {true && (
-                    <td
-                      colSpan="6"
-                      className={`content ${review.show ? "show" : ""}`}
-                    >
-                      {review.show ? review.content : ""}
-                    </td>
-                  )}
-                </tr>
-              </tbody>
-            );
-          })}
         </table>
         <div className="button-box">
           <button>작성</button>

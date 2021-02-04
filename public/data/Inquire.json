@@ -1,10 +1,14 @@
 {
   "question": [
     {
-      "id": 1,
+      "product_group_id": 1,
+      "question_id": 1,
+      "user_name": "최수아",
       "title": "test",
-      "writer": "최수아",
       "date": "2021-01-01",
+      "like": 0,
+      "lookup": 1,
+      "show": false,
       "content": "너무 맘에 들어요 ㅠㅠㅠㅠㅠㅠㅠ "
     }
   ]

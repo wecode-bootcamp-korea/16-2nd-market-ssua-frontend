@@ -52,7 +52,7 @@ class InfoAndCartPut extends Component {
                 <i className="fas fa-share-alt" />
               </span>
             </div>
-            <h3>{itemData.subtitle}</h3>
+            <h3>{itemData.information}</h3>
             <div className="price">
               <div className="real-price">
                 <span>{formatPrice(discountedPrice)}</span>
