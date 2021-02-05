@@ -59,8 +59,10 @@ class Nav extends React.Component{
                 <input className='bar' placeholder='우리 아가들이 좋아하는 간식!' />
                 <i class="fas fa-search" />
               </div>
-              <i class="fas fa-map-marker-alt" />              
+              <i class="fas fa-map-marker-alt" />   
+              <Link to="/cart">
               <i class="fas fa-shopping-cart" />
+              </Link> 
             </div>  
           </div>
         </div>

@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./InfoAndCartPut.scss";
 
@@ -16,9 +17,9 @@ class InfoAndCartPut extends Component {
     };
   }
 
-  formatPrice = (price) => {
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  };
+  // formatPrice = (price) => {
+  //   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  // };
 
   handleQuantity = (e) => {
     const QUANTITY_MIN = 1;
@@ -55,7 +56,8 @@ class InfoAndCartPut extends Component {
             <h3>{itemData.information}</h3>
             <div className="price">
               <div className="real-price">
-                <span>{formatPrice(discountedPrice)}</span>
+                {/* <span>{formatPrice(discountedPrice)}</span> */}
+                <span>{itemData.price}</span>
                 <div className="unit">원</div>
               </div>
             </div>
@@ -76,7 +78,8 @@ class InfoAndCartPut extends Component {
             <div className="price-box">
               <span className="total">총 상품금액 : </span>
               <span className="price">
-                {formatPrice(discountedPrice * quantity)}
+                {/* {formatPrice(discountedPrice * quantity)} */}
+                {itemData.price}
               </span>
               <span className="unit"> 원</span>
             </div>

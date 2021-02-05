@@ -2,6 +2,7 @@ import React, { Component, Fragment }from "react";
 import "./Login.scss";
 import { SIGNIN_SERVER } from "../../config";
 import Nav from "../../Components/Nav/Nav";
+import Social from "../Social/Social";
 
 class Login extends React.Component {
   render() {
@@ -40,6 +41,7 @@ class Login extends React.Component {
             </div>
           </div>
           <div className="login_button">
+            <Social />
             <button onClick={handleLogin}>로그인</button>
             <button onClick={handleSignup}>회원가입</button>
           </div>

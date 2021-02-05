@@ -8,12 +8,13 @@ const NUMBER_FORMAT_REGEXP = /\B(?=(\d{3})+(?!\d))/g;
 
 class Item extends Component {
   render() {
-    const { name, price, discount_rate, main_description } = this.props;
-
+    const { name, price, discount_rate, main_description, id, goToProductDetail } = this.props;
+    console.log(this.props)
     return (
+
       <div className='item'>
         <li className='item_wrapper'>
-          <div className='item_img' onClick={() => this.props.history.push("/details")} >
+          <div className='item_img' onClick={ () => goToProductDetail(id)} >
             <img alt="item" src={this.props.thumbnail} className="img"/>
           </div> 
           <div className='item_info'>

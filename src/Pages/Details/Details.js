@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import InfoAndCartPut from "./Components/InfoAndCartPut";
 import ItemDescription from "./Components/ItemDescription";
 import ItemInquire from "./Components/ItemInquire";
 import ItemDetailMenu from "./Components/ItemDetailMenu";
 import "./Details.scss";
+import Nav from "../../Components/Nav/Nav";
+import {SERVER} from "../../config"
+
 
 const MENU_COMPONENTS = {
   1: ItemDescription,
@@ -28,7 +31,7 @@ class Details extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemData: DATA_ON_LOADING,
+      itemData: [],
     };
   }
 
@@ -41,12 +44,21 @@ class Details extends Component {
   };
 
   componentDidMount() {
-    this.getItemDetailData();
+    // this.getItemDetailData(); 
+    fetch(`http://13.125.206.130:8000/products/product-group/${this.props.match.params.id}`)
+    .then((res) => res.json())
+    .then(res => this.setState({
+      itemData: res.result,
+    }))
+    window.scrollTo(0, 0)
   }
 
   render() {
     const { itemData } = this.state;
+    console.log(itemData)
     return (
+      <Fragment>
+      <Nav />
       <div className="details">
         <div className="main-width">
           <InfoAndCartPut itemData={itemData} />
@@ -65,6 +77,7 @@ class Details extends Component {
           })}
         </div>
       </div>
+      </Fragment>
     );
   }
 }
