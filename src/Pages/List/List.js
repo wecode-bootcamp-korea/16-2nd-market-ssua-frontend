@@ -61,6 +61,10 @@ class List extends Component {
       }))
   }
 
+  goToProductDetail = (id) => {
+    this.props.history.push(`/products/product-group/${id}`)
+  }
+
 
   render() {
     console.log(this.props)
@@ -86,7 +90,8 @@ class List extends Component {
             </div>
             <div className="item_page">
               <Items   
-              Items={items} />
+              Items={items} 
+              goToProductDetail={this.goToProductDetail} />
             </div>
           </div>
           <div className="pagination">

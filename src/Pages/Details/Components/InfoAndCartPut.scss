@@ -108,6 +108,8 @@
         }
       }
       .item-info-list {
+        display: flex;
+        flex-direction: column;
         margin: 27px 0;
         font-size: 14px;
 
@@ -115,13 +117,14 @@
           display: flex;
           align-items: center;
           padding: 16px 0;
-          border-top: 1px solid $light-gray;
+          border: 1px solid $light-gray;
           color: $dark-gray;
           min-height: 54px;
 
           .title {
             display: inline-block;
             width: 150px;
+            padding-left: 10px;
           }
 
           .content {
@@ -159,7 +162,6 @@
       }
     }
     .cart-put {
-      display: flex;
       flex-direction: column;
 
       .price-box {
