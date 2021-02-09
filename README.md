@@ -10,13 +10,15 @@
 ### Back <a href="https://github.com/wecode-bootcamp-korea/16-2nd-market-ssua-backend"> git repo </a> <br>
 김준형 <a href="https://github.com/ddalkigum"> git repo </a> // 최수아 <a href="https://github.com/sue517"> git repo</a> <br>
 ## Front Technologies 🛠
-- React
-- Javascript
 - HTML
 - CSS
+- Javascript
+- React
+- React-fontAwesome
 - React-router-dom
 - GIT
 - SLICK
+- TRELLO
 ## Progress ⛓
 - <a href="https://trello.com/b/JBzF7qXW/market-ssua"> TEAM Trello </a> <br>
 trello 를 이용하여 서로간의 진행 상황을 공유할 수 있도록 하였습니다. trello 는 front / back 의 부분으로 나누어져 구분되어 있으며, 진행중인 사항에도 내부에 check list 를 달아 보다 더 상세한 진행 사항을 표시해 두었습니다. 또, 매일 daily stand-up meeting 을 진행하고 해당 회의 결과를 trello 의 왼쪽 카테고리에 기록해두어 지난 회의에 어떤 의견이 오고 갔는지, 진척 상황은 어떻게 되어가는지를 상세히 알 수 있도록 하였습니다.
@@ -27,7 +29,6 @@ front / back 간의 의사 소통을 수월히 하기 위하여 Json API documen
 - Kakao API 활용, access token 발급 및 전달
 - 장바구니 
 - +/- 버튼 기능을 이용해 가격변동 기능 구현
-- 
 ## Reference 
 - 이 프로젝트는 [market kurly](https://www.kurly.com/shop/main/index.php) 사이트를 참조하여 학습목적으로 만들었습니다.
 - 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
